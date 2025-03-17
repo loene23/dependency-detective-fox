@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,15 @@
 
   body {
     @apply bg-background text-foreground;
+    direction: rtl;
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 640px) {
+    .table-responsive {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
   }
 }
